@@ -190,7 +190,9 @@ export function removeCookie(name) {
 export function setCookie(name, value, days) {
   var date = new Date()
   date.setDate(date.getDate() + days)
+  console.log('date: ', date)
   document.cookie = name + '=' + value + ';expires=' + date
+  return 'kv'
 }
 
 /**

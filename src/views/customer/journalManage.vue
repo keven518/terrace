@@ -14,6 +14,10 @@
     <div>
       {{ 'asdf' | uppercaseFirst }}
     </div>
+
+    <div>
+      <!-- {{ 'kv' | setCookie('520', 7) }} -->
+    </div>
   </div>
 </template>
 
@@ -27,7 +31,9 @@ export default {
   },
   computed: {},
   watch: {},
-  created() {},
+  created() {
+    // setCookie('kv', '520', 7)
+  },
   mounted() {},
   beforeCreate() {},
   beforeMount() {},
